@@ -1,0 +1,31 @@
+# Eclipse files
+.classpath
+.project
+.settings/
+
+# IntelliJ IDEA files
+.idea/
+*.iml
+
+# Package Files
+*.jar
+*.war
+*.ear
+
+# Compressed Files
+*.tar
+*.zip
+
+# Other common ignore patterns
+target/
+build/
+out/
+*.log
+*.tmp
+*.bak
+*.swp
+*.class
+
+# OS generated files
+.DS_Store
+Thumbs.db
