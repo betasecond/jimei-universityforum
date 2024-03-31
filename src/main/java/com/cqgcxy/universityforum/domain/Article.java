@@ -1,15 +1,15 @@
 package com.cqgcxy.universityforum.domain;
 
 
+import com.vladmihalcea.hibernate.type.json.JsonBinaryType;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.hibernate.annotations.Type;
+import org.hibernate.annotations.TypeDef;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.util.Date;
 
 @Data
@@ -17,6 +17,7 @@ import java.util.Date;
 @NoArgsConstructor
 @Builder
 @Entity
+@TypeDef(name = "jsonb", typeClass = JsonBinaryType.class)
 public class Article {
 
     @Id
@@ -26,7 +27,10 @@ public class Article {
     private Long artUserId;
     private String artTitle;//标题
     private Long artTypeId;//类型id
+    @Type(type = "jsonb")
+    @Column(columnDefinition = "jsonb")
     private String artContent;//正文
+
     private Long artCommentId;//评论id
     private Date artCreTime;//创建时间
     private Integer artView;//浏览量
