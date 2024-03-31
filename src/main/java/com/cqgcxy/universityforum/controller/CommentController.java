@@ -41,9 +41,9 @@ public class CommentController {
         Comment comment=new Comment();
 
         Date date=new Date();
-        comment.setComArtId(comArtId);
+//        comment.setComArtId(comArtId);
         comment.setComContent(text);
-        comment.setComUserId(comUserId);
+//        comment.setComUserId(comUserId);
         comment.setComTime(date);
 
 

@@ -46,16 +46,15 @@ public class UserController {
     {
 
         User user=new User();
-        user.setUserImg("default.jpg");
         user.setUserEmail(userEmail);
         user.setUserName(userName);
 
         user.setUserPhone(userPhone);
         user.setUserSex(userSex);
-        user.setUserShow(userShow);
-        user.setUserBlog("myself");
+//        user.setUserShow(userShow);
+//        user.setUserBlog("myself");
         Date date = new Date();//获得系统时间
-        user.setUserTime(date);
+//        user.setUserTime(date);
         BCryptPasswordEncoder bCryptPasswordEncoder=new BCryptPasswordEncoder();
         user.setUserPassword(bCryptPasswordEncoder.encode(userPassword));
 
