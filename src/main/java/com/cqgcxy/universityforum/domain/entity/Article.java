@@ -1,4 +1,4 @@
-package com.cqgcxy.universityforum.domain;
+package com.cqgcxy.universityforum.domain.entity;
 
 
 import com.vladmihalcea.hibernate.type.json.JsonBinaryType;

@@ -1,17 +1,14 @@
 package com.cqgcxy.universityforum.controller;
 
-import com.cqgcxy.universityforum.domain.Article;
-import com.cqgcxy.universityforum.domain.Comment;
+import com.cqgcxy.universityforum.domain.entity.Comment;
 import com.cqgcxy.universityforum.resultmap.ViewComAndUser;
 import com.cqgcxy.universityforum.service.CommentService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.ApplicationContext;
 import org.springframework.data.domain.Page;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.sql.SQLOutput;
 import java.util.Date;
 /*
 * 评论

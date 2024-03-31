@@ -2,7 +2,7 @@ package com.cqgcxy.universityforum.service;
 
 import com.cqgcxy.universityforum.resultmap.ViewComAndUser;
 import org.springframework.data.domain.Page;
-import com.cqgcxy.universityforum.domain.Comment;
+import com.cqgcxy.universityforum.domain.entity.Comment;
 
 
 

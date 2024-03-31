@@ -1,16 +1,16 @@
-package com.cqgcxy.universityforum.domain;
+package com.cqgcxy.universityforum.domain.entity;
 
 
+import com.cqgcxy.universityforum.constant.UserDetailKey;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.hibernate.annotations.Type;
-import org.springframework.format.annotation.DateTimeFormat;
 
 import javax.persistence.*;
-import java.util.Date;
+import java.time.LocalDateTime;
 import java.util.Map;
 
 @Data
@@ -31,10 +31,11 @@ public class User {
     private Byte userStatus;//用户状态1：激活 0：未激活
 
     @JsonFormat(timezone = "GMT+8", pattern = "yyyy-MM-dd HH:mm:ss")
-    private Date userTime;//注册时间
+    private LocalDateTime userTime;//注册时间
+    //可能处理的时候要加默认值
     @Type(type = "jsonb")
     @Column(columnDefinition = "jsonb")
-    private Map<String, String> userDetails; // 存储个性签名、主页、头像等
+    private Map<UserDetailKey, String> userDetails; // 存储个性签名、主页、头像等
 //    private String userShow;//用户个性签名
 //    private String userBlog;//用户主页
 //    private String userImg;//用户头像

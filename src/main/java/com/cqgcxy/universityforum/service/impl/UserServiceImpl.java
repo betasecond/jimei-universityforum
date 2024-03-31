@@ -1,9 +1,8 @@
 package com.cqgcxy.universityforum.service.impl;
 
-import com.cqgcxy.universityforum.domain.User;
+import com.cqgcxy.universityforum.domain.entity.User;
 import com.cqgcxy.universityforum.repository.UserRepository;
 import com.cqgcxy.universityforum.service.UserService;
-import lombok.ToString;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;

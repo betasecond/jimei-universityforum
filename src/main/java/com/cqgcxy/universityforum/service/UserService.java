@@ -1,6 +1,6 @@
 package com.cqgcxy.universityforum.service;
 
-import com.cqgcxy.universityforum.domain.User;
+import com.cqgcxy.universityforum.domain.entity.User;
 import org.springframework.data.domain.Page;
 
 public interface UserService {

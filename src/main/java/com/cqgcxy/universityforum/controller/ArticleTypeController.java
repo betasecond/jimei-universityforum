@@ -1,8 +1,7 @@
 package com.cqgcxy.universityforum.controller;
 
 
-import com.cqgcxy.universityforum.domain.ArticleType;
-import com.cqgcxy.universityforum.service.ArticleService;
+import com.cqgcxy.universityforum.domain.entity.ArticleType;
 import com.cqgcxy.universityforum.service.ArticleTypeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;

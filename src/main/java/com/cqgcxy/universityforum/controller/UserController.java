@@ -1,18 +1,13 @@
 package com.cqgcxy.universityforum.controller;
 
-import ch.qos.logback.core.net.SyslogOutputStream;
-import com.cqgcxy.universityforum.domain.User;
+import com.cqgcxy.universityforum.domain.entity.User;
 import com.cqgcxy.universityforum.repository.UserRepository;
 import com.cqgcxy.universityforum.service.UserService;
-import jdk.nashorn.internal.parser.JSONParser;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
-import org.springframework.data.domain.PageRequest;
-import org.springframework.data.domain.Sort;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.web.bind.annotation.*;
 
-import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
 /*

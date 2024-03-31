@@ -1,6 +1,6 @@
 package com.cqgcxy.universityforum.service.impl;
 
-import com.cqgcxy.universityforum.domain.Article;
+import com.cqgcxy.universityforum.domain.entity.Article;
 import com.cqgcxy.universityforum.repository.ArticleRepositry;
 import com.cqgcxy.universityforum.resultmap.ViewArtAndUser;
 import com.cqgcxy.universityforum.service.ArticleService;

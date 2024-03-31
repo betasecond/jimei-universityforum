@@ -1,4 +1,5 @@
-package com.cqgcxy.universityforum.domain;
+package com.cqgcxy.universityforum.domain.entity;
+
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -9,18 +10,17 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-
-@Entity
+/*实体类*/
+@Data
 @Builder
+@Entity
 @NoArgsConstructor
 @AllArgsConstructor
-@Data
-public class Collect {
-
+public class Admin {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long colId;
+    private Long adminId;
 
-    private Long colArtId;//收藏文章id
-    private Long colUserId;//收藏用户得id/谁收藏了id
+    private String adminLoginName;
+    private String adminLoginPassword;
 }

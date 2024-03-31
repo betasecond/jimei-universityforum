@@ -1,6 +1,6 @@
 package com.cqgcxy.universityforum.repository;
 
-import com.cqgcxy.universityforum.domain.ArticleType;
+import com.cqgcxy.universityforum.domain.entity.ArticleType;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

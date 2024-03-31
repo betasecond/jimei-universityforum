@@ -1,9 +1,8 @@
 package com.cqgcxy.universityforum.service;
 
-import com.cqgcxy.universityforum.domain.Article;
+import com.cqgcxy.universityforum.domain.entity.Article;
 import com.cqgcxy.universityforum.resultmap.ViewArtAndUser;
 import org.springframework.data.domain.Page;
-import org.springframework.data.jpa.repository.Query;
 
 import java.util.List;
 

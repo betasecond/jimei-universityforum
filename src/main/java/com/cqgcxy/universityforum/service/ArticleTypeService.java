@@ -1,6 +1,6 @@
 package com.cqgcxy.universityforum.service;
 
-import com.cqgcxy.universityforum.domain.ArticleType;
+import com.cqgcxy.universityforum.domain.entity.ArticleType;
 import org.springframework.data.domain.Page;
 
 import java.util.List;

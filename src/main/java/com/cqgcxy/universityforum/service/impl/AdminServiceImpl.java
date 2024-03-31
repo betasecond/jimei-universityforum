@@ -1,6 +1,6 @@
 package com.cqgcxy.universityforum.service.impl;
 
-import com.cqgcxy.universityforum.domain.Admin;
+import com.cqgcxy.universityforum.domain.entity.Admin;
 import com.cqgcxy.universityforum.repository.AdminRepository;
 import com.cqgcxy.universityforum.service.AdminService;
 import org.springframework.beans.factory.annotation.Autowired;

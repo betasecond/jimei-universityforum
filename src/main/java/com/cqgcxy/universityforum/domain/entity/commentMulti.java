@@ -1,4 +1,5 @@
-package com.cqgcxy.universityforum.domain;
+package com.cqgcxy.universityforum.domain.entity;
+
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -10,21 +11,20 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import java.util.Date;
-/*实体类*/
+
 @Data
-@Entity
 @Builder
-@NoArgsConstructor
+@Entity
 @AllArgsConstructor
-public class ArticleType {
+@NoArgsConstructor
+public class commentMulti {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long typeId;
+    private Long comMultiId;
 
-    private String typeName;//标签类型
-    private Date typeCreateTime;//创建时间
-    private String typeDesc;//描述
-    private Integer articleNum;//帖子数量
-
+    private Long comId;//一级评论id
+    private String comMultiContent;
+    private Long comMultiUserId;//多级评论用户id
+    private Date comMultiTime;
 }

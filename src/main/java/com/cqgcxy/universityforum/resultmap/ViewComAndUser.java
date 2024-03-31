@@ -1,7 +1,7 @@
 package com.cqgcxy.universityforum.resultmap;
 
-import com.cqgcxy.universityforum.domain.Comment;
-import com.cqgcxy.universityforum.domain.User;
+import com.cqgcxy.universityforum.domain.entity.Comment;
+import com.cqgcxy.universityforum.domain.entity.User;
 
 import java.io.Serializable;
 

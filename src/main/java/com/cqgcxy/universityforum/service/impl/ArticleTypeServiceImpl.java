@@ -1,7 +1,6 @@
 package com.cqgcxy.universityforum.service.impl;
 
-import com.cqgcxy.universityforum.domain.Article;
-import com.cqgcxy.universityforum.domain.ArticleType;
+import com.cqgcxy.universityforum.domain.entity.ArticleType;
 import com.cqgcxy.universityforum.repository.ArticleTypeRepositry;
 import com.cqgcxy.universityforum.service.ArticleTypeService;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -1,6 +1,6 @@
 package com.cqgcxy.universityforum.service.impl;
 
-import com.cqgcxy.universityforum.domain.Comment;
+import com.cqgcxy.universityforum.domain.entity.Comment;
 import com.cqgcxy.universityforum.repository.CommentRepositry;
 import com.cqgcxy.universityforum.resultmap.ViewComAndUser;
 import com.cqgcxy.universityforum.service.CommentService;
