@@ -16,25 +16,25 @@ public class ArticleTypeController {
     @Autowired
     ArticleTypeService articleTypeService;
 
-    @PostMapping("/getallarticletype")
-    List<ArticleType> getAllArticleType(){
-        return articleTypeService.getallArticleType();
-    }
-
-    @PostMapping("/gethotarticletype")
-    public Page<ArticleType> findArticleNoQuery(
-            @RequestParam(value = "page",defaultValue = "0")Integer page,
-            @RequestParam(value = "size",defaultValue = "5")Integer size)
-    {
-        Page<ArticleType> pages = articleTypeService.findArticleNoCriteria(page, size);
-
-//        pages.forEach(System.out::println);
-//        System.out.println("总记录数"+pages.getTotalElements());
-//        System.out.println("总页数"+pages.getTotalPages());
-//        System.out.println("当前页面有多少条记录"+pages.getNumberOfElements());
-//        System.out.println("当前页面的list的"+pages.getContent());
-//        System.out.println("当前第几页"+pages.getNumber()+1);
-        return pages;
-    }
+//    @PostMapping("/getallarticletype")
+//    List<ArticleType> getAllArticleType(){
+//        return articleTypeService.getallArticleType();
+//    }
+//
+//    @PostMapping("/gethotarticletype")
+//    public Page<ArticleType> findArticleNoQuery(
+//            @RequestParam(value = "page",defaultValue = "0")Integer page,
+//            @RequestParam(value = "size",defaultValue = "5")Integer size)
+//    {
+//        Page<ArticleType> pages = articleTypeService.findArticleNoCriteria(page, size);
+//
+////        pages.forEach(System.out::println);
+////        System.out.println("总记录数"+pages.getTotalElements());
+////        System.out.println("总页数"+pages.getTotalPages());
+////        System.out.println("当前页面有多少条记录"+pages.getNumberOfElements());
+////        System.out.println("当前页面的list的"+pages.getContent());
+////        System.out.println("当前第几页"+pages.getNumber()+1);
+//        return pages;
+//    }
 
 }

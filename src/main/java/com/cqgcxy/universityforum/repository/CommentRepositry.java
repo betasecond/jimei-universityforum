@@ -12,6 +12,6 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface CommentRepositry extends JpaRepository<Comment,Long> {
 
-    @Query("select new com.cqgcxy.universityforum.resultmap.ViewComAndUser(c,u) from Comment c,User u where c.comUserId=u.userId and c.comArtId=:artId")
-    Page<ViewComAndUser> findViewComAndUser(Pageable pageable,@Param("artId") Long artId);
+//    @Query("select new com.cqgcxy.universityforum.resultmap.ViewComAndUser(c,u) from Comment c,User u where c.comUserId=u.userId and c.comArtId=:artId")
+//    Page<ViewComAndUser> findViewComAndUser(Pageable pageable,@Param("artId") Long artId);
 }

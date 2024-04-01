@@ -21,36 +21,36 @@ public class CommentController {
 
 
 
-    @PostMapping("/getComment")
-    Page<ViewComAndUser>findComment(
-                    @RequestParam(value = "page",defaultValue = "0")Integer page,
-                    @RequestParam(value = "size",defaultValue = "30")Integer size,
-                    @RequestParam(value = "artId")Long artId)
-    {
-        Page<ViewComAndUser>ss=commentService.findViewComAndUser(page,size,artId);
-        System.out.println(ss.getContent());
-        return commentService.findViewComAndUser(page,size,artId);
-    }
-
-
-    @PostMapping("/postcomment")
-    int postComment(@RequestParam(value = "comArtId")Long comArtId,
-                    @RequestParam(value = "text")String text,
-                    @RequestParam(value = "comUserId")Long comUserId)
-    {
-        Comment comment=new Comment();
-
-        Date date=new Date();
-//        comment.setComArtId(comArtId);
-        comment.setComContent(text);
-//        comment.setComUserId(comUserId);
-        comment.setComTime(date);
-
-
-        //添加评论，写dao层增加方法，明日更新
-
-        return commentService.insertComment(comment)!=null?200:404;
-    }
+//    @PostMapping("/getComment")
+//    Page<ViewComAndUser>findComment(
+//                    @RequestParam(value = "page",defaultValue = "0")Integer page,
+//                    @RequestParam(value = "size",defaultValue = "30")Integer size,
+//                    @RequestParam(value = "artId")Long artId)
+//    {
+//        Page<ViewComAndUser>ss=commentService.findViewComAndUser(page,size,artId);
+//        System.out.println(ss.getContent());
+//        return commentService.findViewComAndUser(page,size,artId);
+//    }
+//
+//
+//    @PostMapping("/postcomment")
+//    int postComment(@RequestParam(value = "comArtId")Long comArtId,
+//                    @RequestParam(value = "text")String text,
+//                    @RequestParam(value = "comUserId")Long comUserId)
+//    {
+//        Comment comment=new Comment();
+//
+//        Date date=new Date();
+////        comment.setComArtId(comArtId);
+//        comment.setComContent(text);
+////        comment.setComUserId(comUserId);
+//        comment.setComTime(date);
+//
+//
+//        //添加评论，写dao层增加方法，明日更新
+//
+//        return commentService.insertComment(comment)!=null?200:404;
+//    }
 
 
 
